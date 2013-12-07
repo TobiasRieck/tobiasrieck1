@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-      <title>Tobias' Test Site f&uuml;r&Aacute;s Web-Engineering MOOC</title>
+    <title>Tobias' Test Site f&uuml;r&Aacute;s Web-Engineering MOOC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -16,44 +16,34 @@
   <body>
         <div class="nav navbar-inverse navbar-fixed-top" role="navigation">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="simple.html">Suchformular</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="simple.html">Suchformular</a></li>
                 <li><a href="animated.html">Animiertes Suchformular</a></li>
             </ul>
         </div>
     <div class="container">
         
         <div class="page-header">
-            <h1>Hallo Welt! <small>Tobias freut sich &uuml;ber deinen Besuch!</small></h1>
+            <h1>NeWS <small>(Noch eine Wiki Suche)</small></h1>
             <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
             <script src="https://code.jquery.com/jquery.js"></script>
             <!-- Include all compiled plugins (below), or include individual files as needed -->
             <script src="js/bootstrap.min.js"></script>
         </div>
         <div class="row">
-            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="jumbotron minsize">
                     <form action="http://de.wikipedia.org/wiki/Spezial:Suche" target="_blank">
-                        <fieldset class="right" name="wikisuche">
-                            <legend class="left" >Wikipedia Suche</legend>
+                        <fieldset class="left">
+                            <legend>Wikipedia Suche</legend>
                             <label for="search" title="Wonach suchen Sie?">Suchbegriff</label>
-                            <input type="text"   name="search" value="" id="search"/>
+                            <input type="text" name="search" value="" id="search"/>
                             <input type="submit" name="go" value="Artikel"/>
-                            <input type="submit" name="fulltext" value="Volltext Suche"/>
+                            <input type="submit" name="fulltext" value="Volltext Suche" />
                         </fieldset>
                     </form>
                 </div>
-                <a href="http://wave.webaim.org/report#/rieck.webhop.net/MOOC/animated.html"><img src="http://www.w3.org/WAI/wcag2AAA.gif" alt="Test auf Einhaltung der Richtlinien WCAG 2.0 AAA und Section 508" class="left"></a>
-            </div>
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                <div class="jumbotron minsize">
-                    <form action="animated.html">
-                        <fieldset class="right">
-                            <legend class="left">Du magst Effekte?</legend>
-                            <input type="submit" name="gohere" value="Versuch das!"/>
-                        </fieldset>
-                    </form>
-                </div>
+                <a href="http://wave.webaim.org/report#/rieck.webhop.net/MOOC/simple.html"><img src="http://www.w3.org/WAI/wcag2AAA.gif" alt="Test auf Einhaltung der Richtlinien WCAG 2.0 AAA und Section 508" class="left"></a>
             </div>
         </div>
     </div>
