@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>XHTML 1.0 Elemente</title>
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <link href="css/tobias.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 class="blau">Tabelle aller "XHTML 1.0 strict"-Elemente</h1>
+        <hr />
+        <p class="einzug">Hausaufgabe im Kapitel 6 war die Erstellung einer mit CSS formatierten Tabelle 
+            aller "XHTML 1.0 strict"-Elemente. Diese Tabelle zeigt alle 77 Elemente und dar&uuml;ber
+            hinaus Angaben zu Bedeutung, Anzeigeart und ob es sich um semantisches HTML handelt.<br />
+            Hier muss nun die Seite dem CSS Standard in Version 2.1 gen&uuml;gen, was sich mit dem 
+            folgenden Button verifizieren l&auml;sst.
+        </p>
+        <div>
+        <p class="einzug">
+            <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css2" target="_blank">
+                <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="CSS ist valide!" />
+            </a>
+        </p>
+        </div>
+        <table class="alt">
+					<thead>
+						<tr>
+							<th scope="col" class="elem">Element</th>
+							<th scope="col" class="addinfo">Bedeutung</th>
+                                                        <th scope="col" class="addinfo">Anzeigeart</th>
+                                                        <th scope="col" class="addinfo">semantisch</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<th scope="col">Element</th>
+							<th scope="col">Bedeutung</th>
+                                                        <th scope="col">Anzeigeart</th>
+                                                        <th scope="col">semantisch</th>
+						</tr>
+					</tfoot>
+					<tbody>
+						<tr id="toc-a" class="match">
+							<th scope="row"><code>&lt;a&gt;</code></th>
+							<td>Anker.</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr>
+							<th scope="row"><code>&lt;abbr&gt;</code></th>
+							<td>Abk&uuml;rzung.</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr>
+							<th scope="row"><code>&lt;acronym&gt;</code></th>
+							<td>Akronym.</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;address&gt;</code></th>
+							<td>Autoreninformation.</td>
+                                                        <td>Block</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr>
+							<th scope="row"><code>&lt;area&gt;</code></th>
+							<td>Clientseitige Image-Map.</td>
+                                                        <td></td>
+                                                        <td>nein</td>
+						</tr>
+						<tr id="toc-b">
+							<th scope="row"><code>&lt;b&gt;</code></th>
+							<td>Fettschrift.</td>
+                                                        <td>Inline</td>
+                                                        <td>nein</td>
+						</tr>
+						<tr>
+							<th scope="row"><code>&lt;base&gt;</code></th>
+							<td>Basis-<abbr title="Uniform Resource Identifier" xml:lang="en">URI</abbr>.</td>
+                                                        <td></td>
+                                                        <td>ja</td>
+						</tr>
+						<tr>
+							<th scope="row"><code>&lt;bdo&gt;</code></th>
+							<td>I18N: Bidi-Eingriff.</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr>
+							<th scope="row"><code>&lt;big&gt;</code></th>
+							<td>Gro&szlig;schrift.</td>
+                                                        <td>Inline</td>
+                                                        <td>nein</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;blockquote&gt;</code></th>
+							<td>Langes Zitat.</td>
+                                                        <td>Block</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;body&gt;</code></th>
+							<td>Dokumentk&ouml;rper.</td>
+                                                        <td></td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;br&gt;</code></th>
+							<td>Zeilenumbruch.</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr>
+							<th scope="row"><code>&lt;button&gt;</code></th>
+							<td>Button.</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;caption&gt;</code></th>
+							<td>(Tabellen-) Kopfzeile.</td>
+                                                        <td></td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;cite&gt;</code></th>
+							<td>Literaturverweis.</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;code&gt;</code></th>
+							<td>Code-Fragment.</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr>
+							<th scope="row"><code>&lt;col&gt;</code></th>
+							<td>Spalte.</td>
+                                                        <td></td>
+                                                        <td>ja</td>
+						</tr>
+						<tr>
+							<th scope="row"><code>&lt;colgroup&gt;</code></th>
+							<td>Spaltengruppe.</td>
+                                                        <td></td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;dd&gt;</code></th>
+							<td>Definitionsbeschreibung.</td>
+                                                        <td></td>
+                                                        <td>ja</td>
+						</tr>
+						<tr>
+							<th scope="row"><code>&lt;del&gt;</code></th>
+							<td>Gel&ouml;schter Text.</td>
+                                                        <td>Block</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;dfn&gt;</code></th>
+							<td>Instanzdefinition.</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;div&gt;</code></th>
+							<td>Generischer Container.</td>
+                                                        <td>Block</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;dl&gt;</code></th>
+							<td>Definitionsliste.</td>
+                                                        <td>Block</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;dt&gt;</code></th>
+							<td>Definitionsbegriff.</td>
+                                                        <td></td>
+                                                        <td>ja</td>
+						</tr>
+						<tr id="toc-e" class="match">
+							<th scope="row"><code>&lt;em&gt;</code></th>
+							<td>Betonung.</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr id="toc-f">
+							<th scope="row"><code>&lt;fieldset&gt;</code></th>
+							<td>Kontrollelementgruppe.</td>
+                                                        <td>Block</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr>
+							<th scope="row"><code>&lt;form&gt;</code></th>
+							<td>Formular.</td>
+                                                        <td>Block</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;h1&gt;</code></th>
+							<td>&Uuml;berschrift.</td>
+                                                        <td>Block</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;h2&gt;</code></th>
+							<td>&Uuml;berschrift.</td>
+                                                        <td>Block</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;h3&gt;</code></th>
+							<td>&Uuml;berschrift.</td>
+                                                        <td>Block</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;h4&gt;</code></th>
+							<td>&Uuml;berschrift.</td>
+                                                        <td>Block</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;h5&gt;</code></th>
+							<td>&Uuml;berschrift.</td>
+                                                        <td>Block</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;h6&gt;</code></th>
+							<td>&Uuml;berschrift.</td>
+                                                        <td>Block</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;head&gt;</code></th>
+							<td>Dokumentkopf.</td>
+                                                        <td></td>
+                                                        <td>ja</td>
+						</tr>
+						<tr>
+							<th scope="row"><code>&lt;hr&gt;</code></th>
+							<td>Horizontaler Trenner.</td>
+                                                        <td>Block</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;html&gt;</code></th>
+							<td>Dokument-<span xml:lang="en">Root</span>.</td>
+                                                        <td></td>
+                                                        <td>ja</td>
+						</tr>
+						<tr id="toc-i">
+							<th scope="row"><code>&lt;i&gt;</code></th>
+							<td>Kursivschrift.</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;img&gt;</code></th>
+							<td>Bild.</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;input&gt;</code></th>
+							<td>Eingabeelement.</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr>
+							<th scope="row"><code>&lt;ins&gt;</code></th>
+							<td>Eingef&uuml;gter Text.</td>
+                                                        <td>Block</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr id="toc-k" class="match">
+							<th scope="row"><code>&lt;kbd&gt;</code></th>
+							<td>Einzugebender Text.</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr>
+							<th scope="row"><code>&lt;label&gt;</code></th>
+							<td>Formularbeschriftung.</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr>
+							<th scope="row"><code>&lt;legend&gt;</code></th>
+							<td>Beschriftung.</td>
+                                                        <td></td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;li&gt;</code></th>
+							<td>Listenelement.</td>
+                                                        <td></td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;link&gt;</code></th>
+							<td>Medienunabh&auml;ngiger Link.</td>
+                                                        <td></td>
+                                                        <td>ja</td>
+						</tr>
+						<tr>
+							<th scope="row"><code>&lt;map&gt;</code></th>
+							<td>Clientseitige Image-Map.</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;meta&gt;</code></th>
+							<td>Generische Metadaten.</td>
+                                                        <td></td>
+                                                        <td>ja</td>
+						</tr>
+						<tr>
+							<th scope="row"><code>&lt;noscript&gt;</code></th>
+							<td>Fallback-Container.</td>
+                                                        <td>Block</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr id="toc-o">
+							<th scope="row"><code>&lt;object&gt;</code></th>
+							<td>Generisches Objekt.</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;ol&gt;</code></th>
+							<td>Geordnete Liste.</td>
+                                                        <td>Block</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr>
+							<th scope="row"><code>&lt;optgroup&gt;</code></th>
+							<td>Optionsgruppe.</td>
+                                                        <td></td>
+                                                        <td>ja</td>
+						</tr>
+						<tr>
+							<th scope="row"><code>&lt;option&gt;</code></th>
+							<td>Auswahlm&ouml;glichkeit.</td>
+                                                        <td></td>
+                                                        <td>ja</td>
+						</tr>
+						<tr id="toc-p" class="match">
+							<th scope="row"><code>&lt;p&gt;</code></th>
+							<td>Absatz.</td>
+                                                        <td>Block</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;param&gt;</code></th>
+							<td>Parameter.</td>
+                                                        <td></td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;pre&gt;</code></th>
+							<td>Vorformatierter Text.</td>
+                                                        <td>Block</td>
+                                                        <td>nein</td>
+						</tr>
+						<tr id="toc-q">
+							<th scope="row"><code>&lt;q&gt;</code></th>
+							<td>Inline-Zitat.</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;samp&gt;</code></th>
+							<td>Beispielausgabe.</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;script&gt;</code></th>
+							<td>Script-Anweisungen.</td>
+                                                        <td>Block</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;select&gt;</code></th>
+							<td>Optionsauswahl.</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr>
+							<th scope="row"><code>&lt;small&gt;</code></th>
+							<td>Kleinschrift (HTML 5: Kleingedrucktes).</td>
+                                                        <td>Inline</td>
+                                                        <td>nein</td>
+						</tr>
+						<tr>
+							<th scope="row"><code>&lt;span&gt;</code></th>
+							<td>Generischer Container.</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;strong&gt;</code></th>
+							<td>Starke Betonung (HTML 5: Wichtigkeit).</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;style&gt;</code></th>
+							<td>Gestaltungsanweisungen.</td>
+                                                        <td></td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;sub&gt;</code></th>
+							<td>Subskript.</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;sup&gt;</code></th>
+							<td>Hochgestellte Schrift.</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr id="toc-t" class="match">
+							<th scope="row"><code>&lt;table&gt;</code></th>
+							<td>Tabelle.</td>
+                                                        <td>Block</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr>
+							<th scope="row"><code>&lt;tbody&gt;</code></th>
+							<td>Tabellenk&ouml;rper.</td>
+                                                        <td></td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;td&gt;</code></th>
+							<td>Tabellenzelle.</td>
+                                                        <td></td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;textarea&gt;</code></th>
+							<td>Mehrzeiliges Textfeld.</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr>
+							<th scope="row"><code>&lt;tfoot&gt;</code></th>
+							<td>Tabellenfu&szlig;.</td>
+                                                        <td></td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;th&gt;</code></th>
+							<td>Tabellenkopfzelle.</td>
+                                                        <td></td>
+                                                        <td>ja</td>
+						</tr>
+						<tr>
+							<th scope="row"><code>&lt;thead&gt;</code></th>
+							<td>Tabellenkopf.</td>
+                                                        <td></td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;title&gt;</code></th>
+							<td>Dokumenttitel.</td>
+                                                        <td></td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;tr&gt;</code></th>
+							<td>Tabellenzeile.</td>
+                                                        <td></td>
+                                                        <td>ja</td>
+						</tr>
+						<tr>
+							<th scope="row"><code>&lt;tt&gt;</code></th>
+							<td>Fernschreiber-Text.</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr class="match">
+							<th scope="row"><code>&lt;ul&gt;</code></th>
+							<td>Ungeordnete Liste.</td>
+                                                        <td>Block</td>
+                                                        <td>ja</td>
+						</tr>
+						<tr id="toc-v" class="match">
+							<th scope="row"><code>&lt;var&gt;</code></th>
+							<td>Variableninstanz.</td>
+                                                        <td>Inline</td>
+                                                        <td>ja</td>
+						</tr>
+					</tbody>
+				</table>
+        
+        
+        <!--div class="oben"><p>Bla Bla</p></div>
+        
+        <div class="trenn">
+            <div class="y"></div>
+            <div class="b"></div>
+            <div class="bk"></div>
+            <div class="r"></div>
+            <div class="g"></div>
+        </div>
+        <div style="position: relative;height: 550px;top: 60px; box-shadow: 0 0 0 white;"></div>
+        <button>Return the top and left position of the p element</button-->
+        
+    </body>
+</html>

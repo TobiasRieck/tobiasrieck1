@@ -24,7 +24,7 @@ and open the template in the editor.
     text-align: left;
 }
 
-.crazy {
+/*.crazy {
     background-color: #ff8800;
     -webkit-transition: all 2s ease-in-out;
     -moz-transition: all 2s ease-in-out;
@@ -36,7 +36,7 @@ and open the template in the editor.
 .crazy:hover {
     background-color: #0088ff;
     text-align: right;
-}
+}*/
 
 .mad {
     
@@ -45,3 +45,35 @@ and open the template in the editor.
 .mad:hover {
     text-align: left;
 }
+
+table {
+                margin-top: 100px;
+                position: relative;
+                width: 80%;
+                margin-left: 10%;
+            }
+            td, th {
+                text-align: left;
+            }
+            hr {
+                width: 90%;
+                float: left;
+                color: #3071a9;
+            }
+            hr:after {
+                clear: both;
+            }
+            .einzug {
+                width: 80%;
+                margin-top: 50px;
+                margin-left: 10%;
+            }
+            .addinfo {
+                width: 25%;
+            }
+            .elem {
+                width: 15%;
+            }
+            .blau {
+                color: #3071a9;
+            }

@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-      <title>Tobias&acute; Test Site f&uuml;r&acute;s Web-Engineering MOOC</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+      <title>Barrierefreie Suche</title>
     <link href="css/tobias.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -14,38 +11,51 @@
     <![endif]-->
   </head>
   <body>
-        <div class="nav navbar-inverse navbar-fixed-top" role="navigation">
+        <!--div class="nav navbar-inverse navbar-fixed-top" role="navigation">
             <ul class="nav navbar-nav">
                 <li><a href="index.html">Home</a></li>
                 <li class="active"><a href="simple.html">Suchformular</a></li>
                 <li><a href="animated.html">Animiertes Suchformular</a></li>
             </ul>
+        </div-->
+    <div>
+        <h1 class="blau">Barrierefreies Suchformular</h1>
+        <hr />
+        <p class="einzug">In Kapitel 7 drehte sich alles um Accessability. Somit forderte die Hausaufgabe 
+           folgerichtig die Erstellung einer barrierefreien Website mit einem ebensolchen
+           Suchformular, das den Benutzer auf die Wikipedia Seiten f&uuml;hrt.<br/>
+           Ein solches Suchformular befindet sich nun auf dieser Seite, die dar&uuml;ber hinaus 
+           auch noch dem CSS 2.1 Standard gen&uuml;gen muss, was sich mit den folgenden Buttons 
+           leicht verifizieren l&auml;sst.
+        </p>
+        <div>
+        <p class="einzug">
+            <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css2" target="_blank">
+                <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="CSS ist valide!" />
+            </a>
+            <a href="http://wave.webaim.org/report#/rieck.webhop.net/MOOC/simple.html" target="_blank">
+                <img src="http://www.w3.org/WAI/wcag2AAA.gif" 
+                     alt="Test auf Einhaltung der Richtlinien WCAG 2.0 AAA und Section 508" 
+                     class="left">
+            </a>
+        </p>
         </div>
-    <div class="container">
-        
-        <div class="page-header">
-            <h1>NeWS <small>(Noch eine Wiki Suche)</small></h1>
-            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-            <script src="https://code.jquery.com/jquery.js"></script>
-            <!-- Include all compiled plugins (below), or include individual files as needed -->
-            <script src="js/bootstrap.min.js"></script>
+        <div class="einzug">
+            <h2>NeWS <small>(Noch eine Wiki Suche)</small></h2>
         </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="jumbotron minsize">
-                    <form action="http://de.wikipedia.org/wiki/Spezial:Suche" target="_blank">
-                        <fieldset class="left">
-                            <legend>Wikipedia Suche</legend>
-                            <label for="search" title="Wonach suchen Sie?">Suchbegriff</label>
-                            <input type="text" name="search" value="" id="search"/>
-                            <input type="submit" name="go" value="Artikel"/>
-                            <input type="submit" name="fulltext" value="Volltext Suche" />
-                        </fieldset>
-                    </form>
-                </div>
-                <a href="http://wave.webaim.org/report#/rieck.webhop.net/MOOC/simple.html"><img src="http://www.w3.org/WAI/wcag2AAA.gif" alt="Test auf Einhaltung der Richtlinien WCAG 2.0 AAA und Section 508" class="left"></a>
+            <div class="einzug">
+                <form action="http://de.wikipedia.org/wiki/Spezial:Suche" target="_blank">
+                    <fieldset class="left">
+                        <legend>Wikipedia Suche</legend>
+                        <label for="search" title="Wonach suchen Sie?">Suchbegriff</label>
+                        <input type="text" name="search" value="Barrierefreiheit" id="search"/>
+                        <input type="submit" name="go" value="Artikel"/>
+                        <input type="submit" name="fulltext" value="Volltext Suche" />
+                    </fieldset>
+                </form>
             </div>
         </div>
-    </div>
   </body>
 </html>
