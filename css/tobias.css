@@ -77,3 +77,10 @@ table {
             .blau {
                 color: #3071a9;
             }
+            .impressum {
+                margin-top: 20px;
+                float: right;
+            }
+            .impressum:after {
+                clear: both;
+            }
