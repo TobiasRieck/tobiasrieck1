@@ -81,9 +81,12 @@ table {
             .impressum, .impressum a {
                 margin-top: 0px;
                 text-align: right;
-                color: #428BCA;
+                color: #3071a9;
                 text-decoration: none;
             }
             .impressum:after {
                 clear: both;
+            }
+            .impressum > p {
+                margin-right: 10%;
             }
