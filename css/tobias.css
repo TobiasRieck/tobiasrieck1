@@ -79,7 +79,7 @@ table {
                 margin-top: 50px;
             }
             .impressum, .impressum a {
-                margin-top: 0px;
+                margin: 10px;
                 text-align: right;
                 color: #3071a9;
                 text-decoration: none;
