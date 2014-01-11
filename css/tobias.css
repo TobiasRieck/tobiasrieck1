@@ -76,10 +76,13 @@ table {
             }
             .blau {
                 color: #3071a9;
+                margin-top: 50px;
             }
-            .impressum {
-                margin-top: 20px;
-                float: right;
+            .impressum, .impressum a {
+                margin-top: 0px;
+                text-align: right;
+                color: #428BCA;
+                text-decoration: none;
             }
             .impressum:after {
                 clear: both;
